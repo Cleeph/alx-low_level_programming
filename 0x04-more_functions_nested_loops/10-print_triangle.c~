@@ -1,0 +1,17 @@
+#include "main.h"
+
+/**
+ * main - Print an upward triangle.
+ * Return: Always 0
+ *
+ */
+void utri( int tricount )
+{
+    int uptri, x;
+    char star;
+    star = '*';
+    for ( uptri = 1; uptri <= tricount; uptri++ )
+    {
+        _putchar(uptri, star);
+    }
+}
