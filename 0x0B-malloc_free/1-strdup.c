@@ -1,7 +1,7 @@
 #include "main.h"
 #include "holberton.h"
 #include <stdio.h>
-#include <stdlib.h"
+#include <stdlib.h>
 
 /**
  * _strdup - function that dubplicate a pointer using the value of another
