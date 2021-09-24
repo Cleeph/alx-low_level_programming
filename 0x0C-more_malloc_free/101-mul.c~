@@ -1,0 +1,15 @@
+#include "main.h"
+
+/**
+ *Program that multiplies 2 positive numbers.
+ *
+ *Return 0.
+ */
+
+int multiply_(x,y)
+{
+  int mltiply;
+  (x by y);
+  return 0;
+
+}
