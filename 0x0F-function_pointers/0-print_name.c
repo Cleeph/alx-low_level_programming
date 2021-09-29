@@ -1,24 +1,16 @@
 #include "function_pointers.h"
-#include <stdarg.h>
-#include <stdio.h>
+#include <stddef.h>
 
 /**
- * sum_them_all -  sum of all its parameters.
- * @n: unsigned int parameter.
- *
- * Return: sum of numbers.
- */
-int sum_them_all(const unsigned int n, ...)
+  * print_name - fills memory with a constant byte
+  * @name: is the name of the dog
+  * @f: is a funtion pointer
+  * Return: a void pointer
+  */
+void print_name(char *name, void (*f)(char *))
 {
-	va_list anum;
-	int sum = 0;
-	unsigned int i;
-
-	if (!n)
-		return (0);
-	va_start(anum, n);
-	for (i = 0; i < n; i++)
-		sum += va_arg(anum, int);
-	va_end(anum);
-	return (sum);
+	if (name == NULL || f == NULL)
+		;
+	else
+		f(name);
 }
