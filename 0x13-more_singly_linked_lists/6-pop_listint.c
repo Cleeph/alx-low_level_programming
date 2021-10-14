@@ -22,6 +22,3 @@ int pop_listint(listint_t **head)
 
 	return (n);
 }
-© 2021 GitHub, Inc.
-Terms
-Priva
